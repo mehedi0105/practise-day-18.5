@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h1>Welcome to your profile</h1>
+    <a class="btn btn-warning mb-3" href="{% url "pass_change1" %}">change password using previous password</a>
+    <br>
+    <a class="btn btn-warning" href="{% url "pass_change2" %}">change password without previous password</a>
+</div>
+{% endblock  %}
